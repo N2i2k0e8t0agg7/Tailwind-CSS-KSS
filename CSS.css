@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #030712;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+    background-color: #60a5fa;
+}
+
+.talk-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.talk-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.subtitle {
+    color: #60a5fa;
+    margin-bottom: 16px;
+}
+
+.hero-content h2 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero-content h2 span {
+    color: #3b82f6;
+}
+
+.description {
+    color: #9ca3af;
+    font-size: 18px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.work-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.work-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 448px;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 32px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 180px);
+        padding: 48px 32px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 48px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 350px;
+    }
+
+}
